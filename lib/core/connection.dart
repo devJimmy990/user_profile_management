@@ -35,4 +35,14 @@ class Connection {
       return DioResponse.failure('An unexpected error occurred: $e');
     }
   }
+  Future<DioResponse> patch({required String url, dynamic data}) async {
+    try {
+      final response = await _dio.patch(url, data: data);
+      return DioResponse.success([response.data]);
+    } on DioException catch (e) {
+      return DioResponse.failure(e.message ?? "DioException occurred");
+    } catch (e) {
+      return DioResponse.failure('An unexpected error occurred: $e');
+    }
+  }
 }
