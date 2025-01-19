@@ -1,9 +1,10 @@
 import 'dart:convert';
+
 import 'package:user_profile_management/data/users.dart';
 import 'package:flutter/material.dart';
-import 'package:user_profile_management/data/model/user.dart';
+import 'package:user_profile_management/model/user.dart';
 import 'package:user_profile_management/core/shared_preferences.dart';
-import 'package:user_profile_management/data/model/dio_response.dart';
+import 'package:user_profile_management/model/dio_response.dart';
 import 'package:user_profile_management/presentation/widgets/user_card.dart';
 import 'package:user_profile_management/presentation/widgets/user_bottom_sheet.dart';
 

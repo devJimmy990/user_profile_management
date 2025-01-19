@@ -1,6 +1,6 @@
-import 'package:demo/presentation/screens/details.dart';
+import 'package:user_profile_management/presentation/screens/details.dart';
 import 'package:flutter/material.dart';
-import 'package:user_profile_management/data/model/user.dart';
+import 'package:user_profile_management/model/user.dart';
 import 'package:user_profile_management/data/users.dart';
 import 'package:user_profile_management/presentation/widgets/snack_bar.dart';
 import 'package:user_profile_management/presentation/widgets/user_bottom_sheet.dart';
