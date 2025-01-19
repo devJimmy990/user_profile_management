@@ -1,10 +1,10 @@
 import 'dart:convert';
 
-import 'package:demo/core/connection.dart';
-import 'package:demo/core/endpoint.dart';
-import 'package:demo/core/shared_preferences.dart';
-import 'package:demo/data/model/dio_response.dart';
-import 'package:demo/data/model/user.dart';
+import 'package:user_profile_management/core/connection.dart';
+import 'package:user_profile_management/core/endpoint.dart';
+import 'package:user_profile_management/core/shared_preferences.dart';
+import 'package:user_profile_management/model/dio_response.dart';
+import 'package:user_profile_management/model/user.dart';
 import 'package:flutter/material.dart';
 
 class UsersController extends ChangeNotifier {

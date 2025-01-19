@@ -45,4 +45,15 @@ class Connection {
       return DioResponse.failure('An unexpected error occurred: $e');
     }
   }
+  Future<DioResponse> delete({required String url, required String id}) async {
+    try {
+      final response = await _dio.delete("$url/$id");
+      print("$url/$id");
+      return DioResponse.success([response.data]);
+    } on DioException catch (e) {
+      return DioResponse.failure(e.message ?? "DioException occurred");
+    } catch (e) {
+      return DioResponse.failure('An unexpected error occurred: $e');
+    }
+  }
 }
